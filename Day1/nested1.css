@@ -1,0 +1,21 @@
+.n-font{
+    font-family: 'Open Sans', sans-serif;
+}
+.n-h1{
+    font-size: 32px;
+    
+}
+.n-h2{
+    font-size: 28px; 
+    text-align: left;
+}
+.n-h1,.n-h2{
+    padding: 10px;
+}
+.n-colTab1{
+    font-weight: 400;
+}
+/* .n-table{
+    border: 1px black;
+    padding: 5px;
+} */

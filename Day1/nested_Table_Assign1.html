@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="nested1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1 style="font-size: 48px;">
+            Nested Tables
+        </h1>
+        <table border="1px" cellspacing="3px" cellpadding="5px" width="1200px">
+            <tr class="n-h1">
+                <th>Header column 1</th>
+                <th>Header column 2</th>
+                <th>Header column 3</th>
+                <th>Header column 4</th>
+            </tr>
+            <tr class="n-h2">
+                <td>Row 2 - Item 2</td>
+                <td>Row 2 - Item 2</td>
+                <th rowspan="2" align="left">
+                    <h4>Row 2 - Nested Table 1 <br></h4> 
+                    <table border="1px" cellspacing="3px" cellpadding="5px">
+                        <tr>
+                            <th>Row 1 Header</th>
+                          <td class="n-colTab1">item</td>
+                        </tr>
+                        <tr>
+                            <th>Row 2 Header</th>
+                            <td class="n-colTab1">item</td>
+                        </tr>
+                        <tr>
+                            <th>Row 3 Header</th>
+                            <td class="n-colTab1">item</td>
+                        </tr>
+                    </table>
+                </th>
+                <td>Row 2 - Item 4 <br> A second line </td>
+            </tr>
+            <tr class="n-h2">
+                <td style="width: 25%;">
+                    <h4>Row 3 - Nested Table 2</h4>
+                    <table border="1px" cellspacing="3px" cellpadding="5px">
+                        <tr>
+                            <th>Row 1 Header</th>
+                          <td class="n-colTab1">item</td>
+                        </tr>
+                        <tr>
+                            <th>Row 1 Header</th>
+                          <td class="n-colTab1">item</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Row 3 - Item 2</td>
+                <td rowspan="2">Row 3 - Item 3</td>
+            </tr>
+            <tr class="n-h2">
+                <td>Row 4 - Item 1</td>
+                <td>Row 4 - Item 2</td>
+                <td>Row 4 - Item 3</td>
+            </tr>
+            <tr class="n-h2">
+                <td colspan="4">Row 5 - Last row of outer table</td>
+            </tr>
+        </table>
+
+        <script src="" async defer></script>
+    </body>
+</html>
