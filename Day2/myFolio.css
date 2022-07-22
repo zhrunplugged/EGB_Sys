@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+  }
+  .mf-header{
+    color:cornflowerblue;
+    background-image: url("imgs/img_band_la.jpeg");
+    height: 300px;
+    text-align: center;
+    font-style: italic;
+    padding: 50px;
+  }
+  .mf-header h1{
+    font-size: 40px;
+  }
+  .mf-nav{
+    background-color:rgb(111, 109, 109);
+    overflow: hidden;
+    padding: 10px;
+  }
+  .mf-nav a{
+    text-decoration: none; /*remove underline */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    float: left;
+    border: 1px solid rgb(132, 130, 130);
+  }
+  .mf-nav a:hover{
+    background-color:rgb(155, 155, 155);
+    ;
+  }
+  .mf-nav button{
+    background-color:dodgerblue;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    padding: 8px 10px;
+    float: right;
+  }
+  .mf-nav a, button{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .mf-row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mf-sideContainer{
+    flex: 30%;
+    background-color: rgb(176, 212, 248);
+    /* height: 800px; */
+  }
+  .mf-mainContainer{
+    flex: 70%;
+    background-color:rgb(145, 200, 255);
+    /* height: 800px; */
+  }
+
+/* Divide side and main containers in rows - Equal division of section */
+[class*="row-"] {height: 400px}
+.row-1{heigth: 8.33%;}
+.row-2{heigth: 16.66%;}
+.row-3{heigth: 25%;}
+.row-4{heigth: 33.33%;}
+.row-5{heigth: 41.66%;}
+.row-6{heigth: 50%;}
+.row-7{heigth: 58.33%;}
+.row-8{heigth: 66.66%;}
+.row-9{heigth: 75%;}
+.row-10{heigth: 83.33%;}
+.row-11{heigth: 91.66%;}
+.row-12{heigth: 100%;}
+
+  .mf-headlines{
+    font: italic bold 32px 'Roboto', sans-serif;
+    padding: 0px 20px;
+  }
+ .mf-subheadlines{
+    font: bold 15px 'Roboto', sans-serif;
+    padding-left: 20px;
+  }
+  .mf-para{
+    padding: 0px 20px;
+  }
+  .mf-img{
+    padding: 20px 20px;
+    height: 100%;}
+ .cascadedImg{    
+    /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    /* transform: matrix(1, 0, 0, .6, 0, 0);  */
+    scale:1 .5;
+    padding: 30px 20px;
+    
+    }
+    
+  /* Responsive - ScreenSize < 735px, stack content  */
+  @media screen and (max-width:935px){
+    .mf-row{flex-direction: column;
+    }
+  }
+    /* Stack local nav links in drawers when vp < 400px*/
+@media screen and (max-width:600px) {
+    .mf-nav a,button {
+    margin-bottom: 3px;
+    float:none;
+    width: 100%;
+    } 
+}
+.mf-footer{
+    background: #ddd;
+    text-align: center;
+    padding: 20px;
+}  
+

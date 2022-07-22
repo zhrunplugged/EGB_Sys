@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+body{
+    background-color: grey;
+}
+/* .rf-main{
+    background: rgb(34,95,195);
+    background: linear-gradient(0deg, rgba(34,95,195,1) 100%, rgba(255,255,255,1) 100%); 
+} */
+.rf-logo{
+display: block;
+}
+.rf-header{
+    padding:  30px 0 0 50px;
+    color: white;
+}
+h2{
+    font-size: 38px;
+    font-weight: 200;
+}
+h3{
+    font-size: 25px;
+    font-weight: 100; 
+}
+h4{font-size: 20px;}
+li{
+    margin: 12px 0px;
+}
+h4, li{
+    font-weight: 100; 
+}
+ul{
+    padding: 0px 15px  ;
+}
+.rf-row{
+    /* background: conic-gradient(rgb(34,95,195), white); */
+    background: rgb(34,95,195);
+    background: linear-gradient(0deg, rgba(34,95,195,1) 100%, rgba(255,255,255,1) 100%); 
+    margin: 50px, auto;
+    height: 900px;
+    /* width: 1200px; */ 
+}
+.rf-row2{
+    margin: 50px, auto;
+    height: 200px;
+    /* width: 1200px; */ 
+}
+.r1-row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.rf-contentCntnr{
+    /* margin: 0px !important; */
+    float: left;
+    color: white;
+    margin: 0px 50px;
+}
+.rf-contentCntnr,.rf-formCntnr{
+    display: inline-block;
+}
+.rf-formCntnr{
+    /* margin: 0px !important; */
+    float: right;
+    margin: 0px 50px;
+    color: white;
+    float: right;
+}
+.rf-formCntnr{
+    background-color: white;
+    border-radius: 20px;
+}
+.rf-formH1{
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-size: 30px;
+    font-weight: 200;
+}
+span{
+    font-weight: bold;
+}
+input::-webkit-input-placeholder{
+    color: black;
+}
+input{
+    background-color: #f1f1f1;
+    font-size: 16px;
+    margin: 12px 10%;
+}
+
+select{
+
+    background-color: red !important;
+    padding: 15px;
+    margin: 15px 10%;
+}
+.rf-button{
+    width: 80%;
+    border: none;
+    margin: 15px 10%;
+    font-size: 28px;
+    font-weight: 100;
+    color: white !important;
+    background-color: rgb(2, 45, 45);
+    border-radius: 30px;
+}
+.rf-alert{
+    color: red;
+    padding-left: 10%;
+    font-size: 10px;
+    display: none;
+}
+input, select, button {
+    padding: 12px;
+    border: none;
+    width: 80%;
+}
+.rf-legal{
+    color: black;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+/* For Desktop width 735px and higher*/
+@media only screen and (min-width: 735px){
+    .col-d-1{width: 8.33%;}
+    .col-d-2{width: 16.66%;}
+    .col-d-3{width: 25%;}
+    .col-d-4{width: 33.33%;}
+    .col-d-5{width: 41.66%;}
+    .col-d-6{width: 50%;}
+    .col-d-7{width: 58.33%;}
+    .col-d-8{width: 66.66%;}
+    .col-d-9{width: 75%;}
+    .col-d-10{width: 83.33%;}
+    .col-d-11{width: 91.66%;}
+    .col-d-12{width: 100%;}
+}
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+[class*="col-"] {width: 100%;}
+}
+
+/* For touch / mobile devices upto 734px */
+@media only screen and(width:734px){
+    .col-s-1{width: 8.33%;}
+    .col-s-2{width: 16.66%;}
+    .col-s-3{width: 25%;}
+    .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;}
+    .col-s-6{width: 50%;}
+    .col-s-7{width: 58.33%;}
+    .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;}
+    .col-s-10{width: 83.33%;}
+    .col-s-11{width: 91.66%;}
+    .col-s-12{width: 100%;}
+}

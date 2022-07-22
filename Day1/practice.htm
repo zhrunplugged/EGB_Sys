@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Table Styling</title>
+        <title>Table Styling - Restaurant Menu</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="practice.css">
@@ -20,97 +20,80 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <table align="center" cellspacing="2" cellpadding="5" width="900px" class="p-tbl">
-            <!-- <colgroup>
-                <col span="1" style="text-align: left">
-                <col span="2" style="text-align: center;">
-            </colgroup> -->
-            <tr>
-                <th colspan="4">
-                    <button class="p-h1 p-btn">Vegetables</button>
-                </th>
-            </tr>
-            <tr class="p-h3">
-                <td colspan="4">
-                    (Starters)
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <img src="imgs/paneer.jpeg" alt="Image of Paneer Tikka" class="p-img">
-                </td>
-                <td colspan="2" align="center">
-                    <img src="imgs/rolls.webp" alt="Image of Veg Rolls" class="p-img">
-                </td>
-            </tr>
-            <tr class="p-h2">
-                <td colspan="2">
-                    Names
-                </td>
-                <td>
-                    Full
-                </td>
-                <td>
-                    Half
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">48. Paneer Tikka</td>
-                <td>$ 11.00</td>
-                <td>6.00</td>
-            </tr>
-            <tr>
-                <td  colspan="2">49. Paneer Malai Tikka</td>
-                <td>$ 12.00</td>
-                <td>6.50</td>
-            </tr>
-            <tr>
-                <td  colspan="2" align="left">
-                    <table>
+        
+                
+        <main id="main">
+            <div class="p-pageBg">
+                <div class="p-menuBg">
+                    <h1 style="display: none;">Restaurant Menu</h1>
+                    <h2 id="p-btnBrdr" class="p-btn">VEGETABLES</h2>
+                    <div class="p-divSrtr">(Starters)</div>
+                    <div>
+                        <img src="imgs/paneer.jpeg" alt="Image of Paneer Tikka" class="p-lftImg"></div>
+                    <div>
+                        <img src="imgs/rolls.webp" alt="Image of Veg Rolls" class="p-rtImg"></div>
+                    <table align="center" cellspacing="2" cellpadding="5" width="800px" class="p-tbl">
+                        <!-- <colgroup>
+                        <col span="1" style="text-align: center;">
+                        </colgroup>   -->
+                        <tr class="p-h2">
+                            <td></td>
+                            <td>Full</td>
+                            <td>Half</td>
+                        </tr>
                         <tr>
-                            <td>50. Tandoori Chaap <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp(Soy Chaap)</td>
+                            <td>48. Paneer Tikka</td>
+                            <td>$ 11.00</td>
+                            <td>6.00</td>
+                        </tr>
+                        <tr>
+                            <td>48. Paneer Tikka</td>
+                            <td>$ 11.00</td>
+                            <td>6.00</td>
+                        </tr>
+                        <tr>
+                            <td>49. Paneer Malai Tikka</td>
+                            <td>$ 12.00</td>
+                            <td>6.50</td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <table>
+                                    <tr>
+                                        <td>50. Tandoori Chaap <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp(Soy Chaap)</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>$ 17.00</td>
+                            <td>9.00</td>
+                        </tr>
+                        <tr>
+                            <td>51. Tandoori Masaala Chaap</td>
+                            <td>$ 19.00</td>
+                            <td>9.50</td>
+                        </tr>
+                        <tr><td>
+                            <h2 id="p-btnBrdr" class="p-btn">Veg Rolls</h2>
+                        </td></tr>
+                        <tr>
+                            <td>52. Paneer Tikka Roll</td>
+                            <td>$ 9.00</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td>53. Paneer Malai Roll</td>
+                            <td>$ 9.50</td>
+                            <td>5.50</td>
+                        </tr>
+                        <tr>
+                            <td>54. Mashroom Roll</td>
+                            <td>$ 8.00</td>
+                            <td>4.50</td>
                         </tr>
                     </table>
-                </td>
-                <td>$ 17.00</td>
-                <td>9.00</td>
-            </tr>
-            <tr>
-                <td colspan="2">51. Tandoori Masaala Chaap</td>
-                <td>1.5lb</td>
-                <td>3.50</td>
-            </tr>
-            <tr>
-                <td colspan="4"></td>
-            </tr>
-            <tr>
-                <th colspan="4">
-                    <button class="p-h2 p-btn">Other Items</button>
-                </th>
-            </tr>
-            <tr>
-                <th>Sweets</th>
-                <th>Snacks</th>
-                <th>Appetizers</th>
-                <th>Drinks</th>
-            </tr>
-            <tr align="center">
-                <td>RasMalai</td>
-                <td>Bhel</td>
-                <td>Samosa</td>
-                <td>Lassi</td>
-            </tr>
-            <tr>
-                <td colspan="4"></td>
-            </tr>
-            <tr>
-                <td colspan="4"></td>
-            </tr>
-            <tr>
-                <td colspan="4"></td>
-            </tr>
-        </table>    
+                </div>
+        </main>    
     <script src="" async defer></script>
     </body>
 </html>

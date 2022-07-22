@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registration - Welcome Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="registrationForm.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="rf-main">
+            <div class="rf-row">
+                <div class="rf-header">
+                    <!-- <img class="rf-logo" src="imgs/logo.avif"> -->
+                    <h1>INTOUCH<br>INSIGHT</h1>
+                </div>
+                <div class="rf-contentCntnr col-d-4 col-s-5">
+                    <p>
+                        <h2 id="heading2">
+                            Spend Less time filling out forms and more 
+                            time optimizing performance.
+                        </h2>
+                        <h3>You know how to run your operations, let us help you streamline
+                            the roll-out and auditing of your standards.
+                        </h3>
+                        <h4>Sign-up today and get access to:</h4>
+                        <ul>
+                            <li>An intuitive and easy-to-use form builder</li>
+                            <li>High quality checklist templates</li>
+                            <li>Follow-up action items to keep you on track</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-d-6 col-s-11">
+                    <form action="">
+                        <div class="rf-formCntnr">
+                            <div class="rf-formH1">Start with a free
+                                <span> 60 day </span>
+                                <br> trail of IntouchCheck</div>
+                                <input id="reg-FirstName" type="text" placeholder="First Name &#42;">
+                                <div class="rf-alert" id="r-Error">Please Enter First Name.</div>
+                                <input id="reg-LaststName" type="text" placeholder="Last Name &#42;">
+                                <input type="text" placeholder="Phone Number &#42;">
+                                <input type="text" placeholder="Company Name &#42;">
+                                <input type="text" placeholder="Business Email &#42;">
+                                <select name="Company Size" id="companySize">
+                                    <option value="Company Size">Company Size &#42;</option>
+                                    <option value="1 k">1000</option>
+                                    <option value="12 k">12000</option>
+                                    <option value="30 k">300000</option>
+                                    <option value="5 k">5 Mil Employees</option>
+                                </select>
+                                <button class="rf-button" onclick="validateFields()">Start my free trail</button>
+                                <div class="rf-legal">&#42;No credit card required for sign-up.</div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="txtShow"></div>
+    <script >
+        function validateFields(){
+            // alert("Hi");
+            var fN = document.getElementById("reg-FirstName").value;
+            if(fN == ""){
+                document.getElementById("r-Error").style.display="block";
+                alert("Please enter FN");
+                
+                alert(fN);
+                // document.getElementById("txtShow").innerHtml="Hello!";
+            }else{
+                document.getElementById("r-Error").style.display="none";
+                alert("Thank You "+fN);
+                
+            }
+            console.log(fN);
+
+
+        }
+    </script>
+    </body>
+</html>

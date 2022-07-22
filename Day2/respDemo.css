@@ -1,0 +1,58 @@
+body{
+    margin: 0px !important;
+    box-sizing: border-box;
+}
+
+.r-squareBox{
+    text-align: center;
+    margin: 50px auto;
+    width: 600px;
+    height: 1200px;
+    background-color: purple;
+}
+.r-whiteRecBox{
+    text-align: center;
+    margin: 40px auto;
+    width: 500px;
+    height: 1000px;
+    background-color: rgb(123, 96, 123);
+}
+.r-pinkCubeBox{
+    text-align: center;
+    margin: auto;
+    width: 450px;
+    height: 950px;
+    background-color: rgb(37, 10, 37);
+}
+.r-blueBg{
+    /* position: absolute;
+    left: 100px;
+    top: 100px; */
+    height: 900px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.r-leftContent{
+    margin: 0px !important;
+    width: 49.5%;
+    height: 600px;
+    background-color: aquamarine;
+    float: left;
+}
+.r-rightContent{
+    margin: 0px !important;
+    width: 49.5%;
+    height: 600px;
+    background-color: coral;
+    float: right;
+    color: white;
+}
+.r-leftContent,.r-rightContent{
+    /* display: inline-block; */
+}
+.r-centerContent{
+    /* position: relative; */
+    width: 90%;
+    background-color: aliceblue;
+    margin: 0px auto;
+}
